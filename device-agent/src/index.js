@@ -15,7 +15,7 @@ const localproxypath = path.join(__dirname, '..', '..','build', 'ubuntu18', 'loc
 let logger = Logger.getLogger('device-agent');
 let argIotOptions = {
     region: '',
-    destination: 'ssh:22,http:80',
+    destination: 'ssh=22,http=80',
     token: '',
     verbose: 5
 }
