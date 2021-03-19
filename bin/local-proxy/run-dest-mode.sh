@@ -7,4 +7,4 @@ LOCAL_PROXY_PATH=$mydir/../../build/ubuntu18
 DAT=$(jq -r ".destinationAccessToken" $IOT_RESOURCES_PATH/tunnel.json)
 REGION=$(aws configure get region)
 
-$LOCAL_PROXY_PATH/localproxy -r $REGION -t $DAT -d ssh:22,http:80 -v 5
+$LOCAL_PROXY_PATH/localproxy -r $REGION -t $DAT -d SSH1=22,HTTP1=80 -v 5
