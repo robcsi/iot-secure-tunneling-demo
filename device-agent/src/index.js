@@ -17,7 +17,7 @@ let argIotOptions = {
     region: '',
     destination: 'localhost:80',
     token: '',
-    verbose: 5
+    verbose: 6
 }
 
 let params = {
